@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const WEATHER_API_KEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY || '9d5a1dcb22314a12838132953262605';
+// API key hardcoded (fallback)
+const WEATHER_API_KEY = '9d5a1dcb22314a12838132953262605';
 
 export default function Home() {
   const [city, setCity] = useState('New York');
